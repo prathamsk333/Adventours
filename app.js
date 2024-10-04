@@ -98,7 +98,7 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: false }));
 
 //----------------------------ROUTE TOURS-----------------------------//
-
+  
 app.get('/', (req, res) => {
   res.status(200).render('base');
 });

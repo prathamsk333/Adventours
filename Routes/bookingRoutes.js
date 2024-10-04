@@ -12,5 +12,10 @@ router.post(
   bookingController.getChecoutSession,
 );
 
-module.exports = router;
-    
+router.post(
+  '/order/validate',
+  authController.protect,
+  bookingController.validateOrder,
+);
+
+module.exports = router;  
